@@ -70,44 +70,12 @@ style={{scaleY: scrollYProgress}}
               company="Github"
               companyLink="https://github.com/GregWith2Gs/Exalendar-React"
               time="Open source project (React.js)"
-              address="Menlo Park, CA."
               work="Worked on a team responsible for developing a new mobile app
               feature that allowed users to create and share short-form video
               content, including designing and implementing a new user interface
               and developing the backend infrastructure to support the feature."
             />
 
-            <Details
-              position="Software Developer"
-              company="Amazon"
-              companyLink="https://amazon.com"
-              time="2020-2021"
-              address="Seattle, WA."
-              work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such as product recommendations and user reviews, and optimizing the app's performance and reliability."
-            />
-
-            <Details
-              position="Software Developer Intern"
-              company="Microsoft"
-              companyLink="https://microsoft.com"
-              time="Summer 2019"
-              address="Redmond, WA."
-              work="Worked on a team responsible for developing new features for
-              Microsoft's Windows operating system, including implementing a new
-              user interface for a system settings panel and optimizing the
-              performance of a core system component."
-            />
-
-            <Details
-              position="Teaching Assistant"
-              company="MIT"
-              companyLink="https://mit.edu"
-              time="Fall 2018"
-              address="Massachusetts Ave, Cambridge, MA."
-              work="Assisted in teaching a course on computer programming, held office
-              hours to help students with assignments, and graded exams and
-              assignments."
-            />
         </ul>
       </div>
     </div>
