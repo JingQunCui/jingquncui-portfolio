@@ -1,5 +1,4 @@
 import AnimatedText from '@/components/AnimatedText';
-import HireMe from '@/components/HireMe';
 import { LinkArrow } from '@/components/Icons';
 import Layout from '@/components/Layout'
 import TransitionEffect from '@/components/TransitionEffect';
@@ -14,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>Awesome Portfolio Built with Nextjs</title>
+      <title>Portfolio - Jing Qun Cui</title>
         <meta
           name="description"
           content="Explore CodeBucks's Next.js developer portfolio and 
@@ -39,11 +38,10 @@ export default function Home() {
                 xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl
                 '/>
                 <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
-                As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+                Aspiring software engineer and data analyst in training. Explore my latest projects showcasing my expertise in software and web development 
                 </p>
                 <div className='flex items-center self-start mt-2 lg:self-center'>
-                  <Link href="/dummy.pdf" target={"_blank"}
+                  <Link href="/Resume - Jing Qun Cui 2023.pdf" target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                   border-2 border-solid border-transparent hover:border-dark
@@ -55,18 +53,13 @@ Explore my latest projects and articles, showcasing my expertise in React.js and
                   >Resume <LinkArrow className={"w-6 ml-1"}/>
                   
                   </Link>
-                  <Link href="mailto:abcd@gmail.com" target={"_blank"}
+                  <Link href="mailto:jingcui99@gmail.com" target={"_blank"}
                   className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base"
                   >Contact</Link>
                 </div>
                </div>
            </div>
         </Layout>
-
-        <HireMe />
-        <div className='absolute right-8 bottom-8 inline-block w-24 md:hidden'>
-          <Image src={lightBulb} alt="Codebucks" className='w-full h-auto' />
-        </div>
       </main>
     </>
   )

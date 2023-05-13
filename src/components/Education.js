@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const Details = ({ type, time, place, info }) => {
+const Details = ({ type, time, place, info, gpa}) => {
   const ref = useRef(null);
   return (
     <li
@@ -43,26 +43,20 @@ const Education = () => {
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-        <Details
+          <Details
             type="Bachelor of Science in Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial Intelligence."
+            time="2020-2024"
+            place="Rensselaer Polytechnic Institute (RPI) | GPA: 3.6"
+            info="Relevant courses: Data Structures, Algorithms, Network Security, Artificial Intelligence, Graph Theory and Operating Systems."
           />
 
           <Details
-            type="Master of Computer Science"
-            time="2020-2022"
-            place="Stanford University"
-            info="Completed a master's project on deep learning, developing a new neural network architecture for natural language understanding."
+            type="Highschool Diploma"
+            time="2020-2024"
+            place="Bronx Highschool of Science"
+            info="Extracurricular Activities: Active member of math team (4 YRS), starting player for handball team (2 YRS)"
           />
 
-          <Details
-            type="Online Coursework"
-            time="2016-2020"
-            place="Coursera and edX"
-            info="Completed coursework in advanced topics such as Reinforcement Learning, Computer Vision, and Machine Learning Engineering."
-          />
         </ul>
       </div>
     </div>
