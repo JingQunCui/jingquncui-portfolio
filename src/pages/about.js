@@ -37,10 +37,8 @@ const about = () => {
   return (
     <>
       <Head>
-      <title>Minimal Portfolio Built with Nextjs | About Page</title>
-        <meta name="description" content="Learn more about CodeBucks, a Next.js developer with a passion for 
-        creating innovative solutions. Discover tips for building a developer portfolio and insights on 
-        full-stack development, front-end development, and back-end development." />
+      <title>About Page</title>
+        <meta name="description" content="" />
       </Head>
       <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
@@ -49,8 +47,8 @@ const about = () => {
             text="Biography"
             className="mb-16 !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
-          <div className="grid w-full grid-cols-8 gap-32 sm:gap-8">
-            <div className="col-span-4 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
+          <div className=" w-full sm:gap-8">
+            <div className="w-full flex flex-col px-96 xl:col-span-4 xl:px-32 md:order-2 md:col-span-8 md:px-40 sm:px-0">
               <p className="font-medium">
                 Hello, my name is Jing Cui and I am a Junior undergraduate student at RPI. 
                 As a student majoring in computer science, I have always been 

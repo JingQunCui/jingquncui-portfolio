@@ -52,7 +52,7 @@ const Education = () => {
 
           <Details
             type="Highschool Diploma"
-            time="2020-2024"
+            time="2016-2020"
             place="Bronx Highschool of Science"
             info="Extracurricular Activities: Active member of math team (4 YRS), starting player for handball team (2 YRS)"
           />
