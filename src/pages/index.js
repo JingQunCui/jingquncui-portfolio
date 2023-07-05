@@ -5,7 +5,7 @@ import TransitionEffect from '@/components/TransitionEffect';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/profilepic.jpg";
 
 
 export default function Home() {
@@ -15,16 +15,14 @@ export default function Home() {
       <title>Portfolio - Jing Qun Cui</title>
         <meta
           name="description"
-          content="Explore CodeBucks's Next.js developer portfolio and 
-        discover the latest webapp projects and software engineering articles. 
-        Showcase your skills as a full-stack developer and software engineer."
+          content=""
         />
       </Head>
       <TransitionEffect />
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light sm:items-start'>
         <Layout className='pt-0 md:pt-16 sm:pt-16'>
            <div className="flex items-center justify-between w-full lg:flex-col">
-               <div className='w-1/2 md:w-full'>
+               <div className='w-5/12 md:w-full'>
                 <Image src={profilePic} alt="CodeBucks" className='w-full h-auto lg:hidden md:inline-block md:w-full'
                 priority
                 sizes="(max-width: 768px) 100vw,
@@ -33,7 +31,7 @@ export default function Home() {
                  />
                </div>
                <div className='w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center'>
-                <AnimatedText text="Turning Vision Into Reality With Code And Design." className='!text-6xl !text-left 
+                <AnimatedText text="The best way to predict the future is to invent it" className='!text-6xl !text-left 
                 xl:!text-5xl lg:!text-center lg:!text=6xl md:!text-5xl sm:!text-3xl
                 '/>
                 <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
