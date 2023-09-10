@@ -3,7 +3,6 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Layout from "@/components/Layout";
-import TransitionEffect from "@/components/TransitionEffect";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
@@ -40,7 +39,6 @@ const about = () => {
       <title>About Page</title>
         <meta name="description" content="" />
       </Head>
-      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText

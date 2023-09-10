@@ -1,7 +1,6 @@
 import AnimatedText from '@/components/AnimatedText';
 import { LinkArrow } from '@/components/Icons';
 import Layout from '@/components/Layout'
-import TransitionEffect from '@/components/TransitionEffect';
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
@@ -42,7 +41,6 @@ const about = () => {
       <title>About Page</title>
         <meta name="description" content="" />
       </Head>
-      <TransitionEffect />
       <main className="flex w-full flex-col items-center justify-center dark:text-light" id="about">
         <Layout className="pt-16">
           <AnimatedText
@@ -97,7 +95,6 @@ export default function Home() {
           content=""
         />
       </Head>
-      <TransitionEffect />
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light sm:items-start'>
         <Layout className='pt-0 md:pt-16 sm:pt-16'>
           
