@@ -3,9 +3,9 @@ import {motion, useScroll } from "framer-motion"
 import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, work }) => {
-    const ref = useRef(null);
+  const ref = useRef(null);
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between md:w-[80%]">
+    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
       
       <LiIcon reference={ref}/>
       <motion.div
@@ -13,7 +13,7 @@ const Details = ({ position, company, companyLink, time, work }) => {
       whileInView={{y:0}}
       transition={{duration:0.5, type:"spring"}}
       >
-        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
+        <h3 className="capitalize font-bold text-2xl">
           {position}&nbsp;
           <a
             href={companyLink}
@@ -23,10 +23,10 @@ const Details = ({ position, company, companyLink, time, work }) => {
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time}
         </span>
-        <p className="font-medium w-full md:text-sm">{work}</p>
+        <p className="font-medium w-full">{work}</p>
       </motion.div>
     </li>
   );
@@ -40,42 +40,36 @@ const Projects = () => {
             offset: ["start end", "center start"]
         }
     )
-  return (
-    <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-        Projects
-      </h2>
+    return (
+      <div className="my-64">
+        <h2 className="font-bold text-8xl mb-32 w-full text-center">
+          Projects
+        </h2>
 
-      <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
+        <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
 
-<motion.div
-style={{scaleY: scrollYProgress}}
-  className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top 
-  md:w-[2px] md:left-[30px] xs:left-[20px] dark:bg-primaryDark dark:shadow-3xl
-  "  />
+        <motion.div style={{scaleY: scrollYProgress}}
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-primaryDark dark:shadow-3xl"/>
 
-        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-        <Details
+        <ul className="w-full flex flex-col items-start justify-center ml-4">
+            <Details
               position="RCOS: LEGUP"
               company="Github"
               companyLink="https://github.com/Bram-Hub/LEGUP"
-              time="Open source project (Java)"
-              work="Worked with a team to develop an interface for users to create and solve puzzles to better understand logistics and game theory. Improvised overall aesthetics of the UI and implemented new logistics to old algorithm to eliminate
-              unnecessary workflows. Fixed over 30+ bugs and unit tested with JUnit. Documented development standards, such as using git-flow branching model and coordinated with professor
-              and other members about short and long term goals aligning with professor’s vision"
+              time="Open source project (Java, Swing)"
+              work="Implemented front end features using Java and Swing"
             />
 
             <Details
               position="RCOS: Excalendar"
               company="Github"
               companyLink="https://github.com/GregWith2Gs/Exalendar-React"
-              time="Open source project (React.js)"
+              time="Open source project (Html, Css, Javascript, SQL)"
               work="Worked on a team responsible for developing a new mobile app
               feature that allowed users to create and share short-form video
               content, including designing and implementing a new user interface
               and developing the backend infrastructure to support the feature."
             />
-
         </ul>
       </div>
     </div>
