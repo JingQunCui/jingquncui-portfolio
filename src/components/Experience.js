@@ -56,23 +56,14 @@ style={{scaleY: scrollYProgress}}
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
-            position="Office Assistant"
-            company="World Ice Arena"
-            companyLink="https://www.worldice.com/"
-            time="Summer 2021"
-            address="Queens, NY"
-            work="Managed administrative tasks including answering phones, responding to emails, scheduling appointments, filing paperwork, processed accounts payable and receivable, prepared invoices, and provided exceptional customer service"
+            position="Web Design Intern"
+            company="Kuumba Health LLC"
+            companyLink="https://linktr.ee/kuumbahealth"
+            time="Summer 2023"
+            address="Remote"
+            work="Implemented website modernization initiatives to enhance the overall user experience and integrate SEO optimization, resulting in ~37% surge in website traffic from unique visitors. Utilized Html, Css modifications to "
           />
 
-          <Details
-            position="Teaching Assistant"
-            company="E-math Private Tutoring"
-            companyLink="https://www.emathinstruction.com/"
-            time="Summer 2020"
-            address="Queens, NY"
-            work="Assisted in writing lesson plans for highschool students in preparation for college math and science courses and 
-            prepared mock exams for students similar to the SAT format. Saw an average of 150 points increase in overall SAT scores"
-          />
         </ul>
       </div>
     </div>
