@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>Andrew Cui</title>
+      <title>Jesse Cui</title>
         <meta
           name="description"
           content=""
@@ -23,13 +23,13 @@ export default function Home() {
 
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0'>
-           <div className="flex items-center justify-between w-full lg:flex-col">
+           <div className="flex items-center justify-between w-full">
                <div className='w-1/2 flex flex-col items-center self-center '>
                 <AnimatedText text="The best way to predict the future is to invent it" className='!text-6xl !text-left'/>
                 <p className='my-4 text-base font-medium'>
                   Aspiring software engineer and data analyst in training. Explore my latest projects showcasing my expertise in software and web development 
                 </p>
-                <div className='flex items-center self-start mt-2 lg:self-center'>
+                <div className='flex items-center self-start mt-2'>
                   <Link href="/Resume - Jing Qun Cui 2023.pdf" target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
@@ -40,13 +40,13 @@ export default function Home() {
                   </Link>
 
                   <Link href="mailto:jingcui99@gmail.com" target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light md:text-base">
+                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light">
                     Contact
                   </Link>
                 </div>
                </div>
-               <div className='w-4/12 md:w-full'>
-                <Image src={profilePic} alt="jingcui" className='w-full h-auto lg:hidden md:inline-block md:w-full'
+               <div className='w-4/12'>
+                <Image src={profilePic} alt="JesseCui" className='w-full h-auto rounded-full'
                 priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
                </div>
            </div>
@@ -57,9 +57,9 @@ export default function Home() {
         <Layout className="pt-16" id="about">
           <AnimatedText
             text="Biography"
-            className="mb-16 !leading-tight lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"/>
-          <div className=" w-full sm:gap-8">
-            <div className="w-full flex flex-col px-96 xl:col-span-4 xl:px-32 md:order-2 md:col-span-8 md:px-40 sm:px-0">
+            className="mb-16 !leading-tight"/>
+          <div className=" w-full">
+            <div className="w-full flex flex-col px-96">
               <p className="font-medium">
               Hello, my name is Andrew, currently a senior at the Rensselaer Polytechnic Institute pursuing a degree in Computer Science. I have a strong interest in product development and a deep passion for leveraging technology to drive positive change. My academic pursuits revolve around software engineering and machine learning. Additionally, I am actively exploring new graduate opportunities for Spring/Summer 2024.
               </p>
