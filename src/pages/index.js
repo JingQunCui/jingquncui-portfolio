@@ -27,7 +27,7 @@ export default function Home() {
                <div className='w-1/2 flex flex-col items-center self-center '>
                 <AnimatedText text="The best way to predict the future is to invent it" className='!text-6xl !text-left'/>
                 <p className='my-4 text-base font-medium'>
-                  Aspiring software engineer and data analyst in training. Explore my latest projects showcasing my expertise in software and web development 
+                  Interested in new grad SWE positions 
                 </p>
                 <div className='flex items-center self-start mt-2'>
                   <Link href="/Resume - Jing Qun Cui 2023.pdf" target={"_blank"}
