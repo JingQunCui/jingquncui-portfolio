@@ -46,7 +46,7 @@ export default function Home() {
                 </div>
                </div>
                <div className='w-4/12'>
-                <Image src={profilePic} alt="JesseCui" className='w-full h-auto rounded-full'
+                <Image src={profilePic} alt="JesseCui" className='w-full h-auto rounded-3xl'
                 priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
                </div>
            </div>
