@@ -25,8 +25,8 @@ export default function Home() {
         <Layout className='pt-0'>
            <div className="flex items-center justify-between w-full">
                <div className='w-1/2 flex flex-col items-center self-center '>
-                <AnimatedText text="The best way to predict the future is to invent it" className='!text-6xl !text-left'/>
-                <p className='my-4 text-base font-medium'>
+                <AnimatedText text="Jesse Cui" className='!text-6xl !text-left'/>
+                <p className='my-4 text-2xl font-medium'>
                   Interested in new grad SWE positions 
                 </p>
                 <div className='flex items-center self-start mt-2'>
