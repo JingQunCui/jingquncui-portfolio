@@ -19,9 +19,9 @@ export default function Home() {
         <Layout className='pt-0'>
            <div className="flex items-center w-full">
               <div className='w-full flex flex-col items-center self-center '>
-                <AnimatedText text="Hi, my name is..." className='!text-xs !text-left'/>
-                <AnimatedText text="Jesse Cui" className='item center !text-9xl !text-left'/>
-                <AnimatedText text="I am an aspiring software engineer who is committed to creating impactful solutions through technology." className='!text-xl !text-left'/>
+                <AnimatedText text="Hi, my name is..." className='!text-sm !text-left' color="white"/>
+                <AnimatedText text="Jesse Cui" className='item center !text-9xl !text-left' color="lightBlue" paddingLeft="20px"/>
+                <AnimatedText text="I am an aspiring software engineer who is committed to creating impactful solutions through technology." className='item center !text-2xl !text-left' color="white" paddingLeft="40px"/>
 
                 <div className='flex items-end self-start mt-2'>
                   <Link href="/JesseCui_2024_Resume.pdf" target={"_blank"}

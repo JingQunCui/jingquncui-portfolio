@@ -11,14 +11,16 @@ const about = () => {
     return (
       <>
         <Head>
-        <title>About Page</title>
-          <meta name="description" content="Biography of Jesse Cui" />
+        <title>About Me</title>
+          <meta name="description" content="About Me" />
         </Head>
+
         <main className="flex w-full flex-col items-center justify-center dark:text-light">
           <Layout className="pt-16">
             <AnimatedText
               text="About Me"
               className="mb-16 !leading-tight"
+              color="white"
             />
             <div className="grid w-full grid-cols-8 gap-16">
               <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
