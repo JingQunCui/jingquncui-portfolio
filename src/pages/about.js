@@ -45,7 +45,7 @@ const about = () => {
                 </p>
               </div>
   
-              <div className="col-span-4 relative h-max rounded-2xl border-2 border-solid border-darkbg-light p-8 dark:bg-dark dark:border-light">
+              <div className="col-span-5 relative h-max rounded-2xl border-2 border-solid border-darkbg-light p-8 dark:bg-dark dark:border-light">
                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
                     <Image
                     src={profilePic}

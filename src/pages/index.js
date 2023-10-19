@@ -1,18 +1,14 @@
 import AnimatedText from '@/components/AnimatedText';
 import Layout from '@/components/Layout'
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link';
-import Education from "@/components/Education";
-import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
 import React from "react";
 
 export default function Home() {
   return (
     <>
       <Head>
-      <title>Jesse Cui</title>
+      <title>My Portfolio</title>
         <meta
           name="description"
           content=""
@@ -24,13 +20,11 @@ export default function Home() {
            <div className="flex items-center w-full">
               <div className='w-full flex flex-col items-center self-center '>
                 <AnimatedText text="Hi, my name is..." className='!text-xs !text-left'/>
-                <AnimatedText text="Jesse Cui" className='!text-6xl !text-left'/>
+                <AnimatedText text="Jesse Cui" className='item center !text-9xl !text-left'/>
+                <AnimatedText text="I am an aspiring software engineer who is committed to creating impactful solutions through technology." className='!text-xl !text-left'/>
 
-                <p className='my-4 text-xs font-medium'>
-                  Hi, my name is... 
-                </p>
-                <div className='flex items-center self-start mt-2'>
-                  <Link href="/Resume - Jing Qun Cui 2023.pdf" target={"_blank"}
+                <div className='flex items-end self-start mt-2'>
+                  <Link href="/JesseCui_2024_Resume.pdf" target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                   border-2 border-solid border-transparent hover:border-dark
