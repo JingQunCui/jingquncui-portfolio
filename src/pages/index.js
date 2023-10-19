@@ -24,7 +24,7 @@ export default function Home() {
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0'>
            <div className="flex items-center justify-between w-full">
-               <div className='w-1/2 flex flex-col items-center self-center '>
+              <div className='w-1/2 flex flex-col items-center self-center '>
                 <AnimatedText text="Jesse Cui" className='!text-6xl !text-left'/>
                 <p className='my-4 text-2xl font-medium'>
                   Interested in new grad SWE positions 
@@ -48,45 +48,11 @@ export default function Home() {
                <div className='w-4/12'>
                 <Image src={profilePic} alt="JesseCui" className='w-full h-auto rounded-3xl'
                 priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
-               </div>
+              </div>
            </div>
         </Layout>
       </main>
 
-      <main className="flex w-full flex-col items-center justify-center dark:text-light">
-        <Layout className="pt-16" id="about">
-          <AnimatedText
-            text="Biography"
-            className="mb-16 !leading-tight"/>
-          <div className=" w-full">
-            <div className="w-full flex flex-col px-96">
-              <p className="font-medium">
-              Hello, my name is Andrew, currently a senior at the Rensselaer Polytechnic Institute pursuing a degree in Computer Science. I have a strong interest in product development and a deep passion for leveraging technology to drive positive change. My academic pursuits revolve around software engineering and machine learning. Additionally, I am actively exploring new graduate opportunities for Spring/Summer 2024.
-              </p>
-                
-              <p className="my-4 font-medium">
-                During my studies, I had the opportunity to work on a variety of projects
-                that have allowed me to gain experience in both software engineering and data
-                science. In addition to my personal projects, I also had the opportunity to work 
-                in open source projects under great professors whom gave many great insights and guidance
-                along the way, and allowed me to develope strong communication and teamwork skills. 
-              </p>
-
-              <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
-              </p>
-            </div>
-          </div>
-
-          <Experience />
-          <Projects />
-          <Education />
-        </Layout>
-      </main>
     </>
   )
 }
