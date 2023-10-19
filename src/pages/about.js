@@ -31,20 +31,6 @@ const about = () => {
                   Hi, my name is Jesse Cui. I'm a rising fourth year at the Rensselaer Polytechnic Institute studying Computer Science.
                   
                 </p>
-  
-                <p className="my-4 font-medium">
-                  I believe that design is about more than just making things look
-                  pretty – it&apos;s about solving problems and creating intuitive,
-                  enjoyable experiences for users.
-                </p>
-  
-                <p className="font-medium">
-                  Whether I&apos;m working on a website, mobile app, or other digital
-                  product, I bring my commitment to design excellence and
-                  user-centered thinking to every project I work on. I look
-                  forward to the opportunity to bring my skills and passion to
-                  your next project.
-                </p>
               </div>
   
               <div className="col-span-5 relative h-max rounded-2xl border-2 border-solid border-darkbg-light p-8 dark:bg-dark dark:border-light">
