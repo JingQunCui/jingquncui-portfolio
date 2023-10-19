@@ -1,10 +1,8 @@
 import AnimatedText from '@/components/AnimatedText';
-import { LinkArrow } from '@/components/Icons';
 import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
-import profilePic from "../../public/images/profile/profile1.png";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -23,11 +21,13 @@ export default function Home() {
 
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
         <Layout className='pt-0'>
-           <div className="flex items-center justify-between w-full">
-              <div className='w-1/2 flex flex-col items-center self-center '>
+           <div className="flex items-center w-full">
+              <div className='w-full flex flex-col items-center self-center '>
+                <AnimatedText text="Hi, my name is..." className='!text-xs !text-left'/>
                 <AnimatedText text="Jesse Cui" className='!text-6xl !text-left'/>
-                <p className='my-4 text-2xl font-medium'>
-                  Interested in new grad SWE positions 
+
+                <p className='my-4 text-xs font-medium'>
+                  Hi, my name is... 
                 </p>
                 <div className='flex items-center self-start mt-2'>
                   <Link href="/Resume - Jing Qun Cui 2023.pdf" target={"_blank"}
@@ -36,7 +36,7 @@ export default function Home() {
                   border-2 border-solid border-transparent hover:border-dark
                   dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
                   hover:dark:border-light" download={true}>
-                    Resume <LinkArrow className={"w-6 ml-1"}/>
+                    Resume
                   </Link>
 
                   <Link href="mailto:jingcui99@gmail.com" target={"_blank"}
@@ -45,10 +45,6 @@ export default function Home() {
                   </Link>
                 </div>
                </div>
-               <div className='w-4/12'>
-                <Image src={profilePic} alt="JesseCui" className='w-full h-auto rounded-3xl'
-                priority sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw" />
-              </div>
            </div>
         </Layout>
       </main>
