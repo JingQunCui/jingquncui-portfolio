@@ -29,7 +29,7 @@ const about = () => {
                 </h2>
                 <p className="font-medium">
                   Hi, my name is Jesse. I am a rising fourth year at the Rensselaer Polytechnic Institute studying Computer Science.
-                  My academic focus centers on software engineering and machine learning. \n
+                  My academic focus centers on software engineering and machine learning.
                   I pride myself on being well-organized, dedicated, and adept at thriving in high-pressure situations. 
                   I am actively seeking a new graduate position with a STEM-oriented company where 
                   I can make a meaningful contribution to society while also enhancing my own skill set.
