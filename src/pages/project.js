@@ -28,8 +28,7 @@ const project = () => {
                   Biography
                 </h2>
                 <p className="font-medium">
-                  Hi, my name is Jesse Cui. I am a rising fourth year at the Rensselaer Polytechnic Institute studying Computer Science.
-                  
+                    Ima cum in konain qureshi                  
                 </p>
               </div>
   

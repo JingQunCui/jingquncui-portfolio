@@ -19,34 +19,35 @@ const NavBar = () => {
 
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://twitter.com/chatterfloo"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mr-3"
-          >
-            <TwitterIcon/>
-          </motion.a>
-
-          <motion.a
-            href="https://github.com/JingQunCui"
-            target={"_blank"}
-            className="w-6 mx-3"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <GithubIcon/>
-          </motion.a>
-          
-          <motion.a
             href="https://www.linkedin.com/in/jingqun-cui-775819246/"
             target={"_blank"}
-            className="w-6 mx-3"
+            className="w-6 mx-6"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
           >
             <LinkedInIcon/>
           </motion.a>
+
+          <motion.a
+            href="https://github.com/JingQunCui"
+            target={"_blank"}
+            className="w-6 mr-6"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <GithubIcon/>
+          </motion.a>
+
+          <motion.a
+            href="https://twitter.com/chatterfloo"
+            target={"_blank"}
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 mr-6"
+          >
+            <TwitterIcon/>
+          </motion.a>
+
         </nav>
       </div>
     </header>
