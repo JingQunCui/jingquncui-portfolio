@@ -28,7 +28,8 @@ const about = () => {
                   Biography
                 </h2>
                 <p className="font-medium">
-                  Hi, my name is Jesse. I am a rising fourth year at the Rensselaer Polytechnic Institute studying Computer Science.
+                  Hi, my name is Jing Qun Cui or otherwise known as Jesse Cui. 
+                  I am a rising fourth year at the Rensselaer Polytechnic Institute studying Computer Science.
                   My academic focus centers on software engineering and machine learning.
                   I pride myself on being well-organized, dedicated, and adept at thriving in high-pressure situations. 
                   I am actively seeking a new graduate position with a STEM-oriented company where 

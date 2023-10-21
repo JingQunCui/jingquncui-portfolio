@@ -19,7 +19,7 @@ const NavBar = () => {
 
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
-            href="https://www.linkedin.com/in/jingqun-cui-775819246/"
+            href="https://www.linkedin.com/in/jesse-cui-775819246/"
             target={"_blank"}
             className="w-6 mx-6"
             whileHover={{ y: -2 }}
