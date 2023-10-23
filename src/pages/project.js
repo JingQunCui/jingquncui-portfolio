@@ -32,7 +32,7 @@ const Details = ({ position, company, companyLink, time, work }) => {
   );
 };
 
-const Projects = () => {
+const project = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll(
         {
@@ -76,4 +76,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default project;
