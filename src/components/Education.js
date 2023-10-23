@@ -33,20 +33,14 @@ const Education = () => {
   });
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">Education</h2>
+      <h2 className="font-bold text-8xl mb-32 w-full text-center">Education</h2>
 
-      <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
-        <motion.div
-          style={{ scaleY: scrollYProgress }}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
-          md:w-[2px] md:left-[30px] xs:left-[20px] dark:bg-primaryDark dark:shadow-3xl"
-        />
-
+      <div ref={ref} className="w-[75%] mx-auto relative">
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
           <Details
             type="Bachelor of Science in Computer Science"
             time="2020-2024"
-            place="Rensselaer Polytechnic Institute (RPI) | GPA: 3.5"
+            place="Rensselaer Polytechnic Institute | GPA: 3.5"
             info="Relevant Courses: Data Structures, Algorithms, Discrete Math, Computer System, AI & ML, Cryptography and Network Security, 
             Graph Theory, Operating System, Database Systems, Linear Algebra, AI & Blockchain"
           />
