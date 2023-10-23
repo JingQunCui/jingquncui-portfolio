@@ -18,11 +18,9 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/home.png" />
       </Head>
-      <main
-        className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
-      >
+      <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
         <NavBar />
-        <AnimatePresence initial={false} mode="wait">
+        <AnimatePresence initial={true} mode="wait">
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
       </main>
