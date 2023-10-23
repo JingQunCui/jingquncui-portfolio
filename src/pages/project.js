@@ -1,79 +1,221 @@
-import React, { useRef } from "react";
-import {motion, useScroll } from "framer-motion"
-import LiIcon from "./LiIcon";
+import AnimatedText from "@/components/AnimatedText";
+import { GithubIcon } from "@/components/Icons";
+import Layout from "@/components/Layout";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { motion } from "framer-motion";
 
-const Details = ({ position, company, companyLink, time, work }) => {
-  const ref = useRef(null);
+const FramerImage = motion(Image);
+
+const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between">
-      
-      <LiIcon reference={ref}/>
-      <motion.div
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration:0.5, type:"spring"}}
+    <article
+      className="w-full flex items-center justify-between relative  rounded-br-2xl
+        rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
+        lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark dark:bg-light
+    rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]
+    "
+      />
+      <Link
+        href={link}
+        target="_blank"
+        className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
       >
-        <h3 className="capitalize font-bold text-2xl">
-          {position}&nbsp;
-          <a
-            href={companyLink}
-            target="_blank"
-            className="text-primary dark:text-primaryDark capitalize"
-          >
-            @{company}
-          </a>
-        </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
-          {time}
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              50vw"
+        />
+      </Link>
+
+      <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base">
+          {type}
         </span>
-        <p className="font-medium w-full">{work}</p>
-      </motion.div>
-    </li>
-  );
-};
-
-const project = () => {
-    const ref = useRef(null);
-    const {scrollYProgress} = useScroll(
-        {
-            target: ref,
-            offset: ["start end", "center start"]
-        }
-    )
-    return (
-      <div className="my-64">
-        <h2 className="font-bold text-8xl mb-32 w-full text-center">
-          Projects
-        </h2>
-
-        <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
-
-        <motion.div style={{scaleY: scrollYProgress}}
-          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-primaryDark dark:shadow-3xl"/>
-
-        <ul className="w-full flex flex-col items-start justify-center ml-4">
-            <Details
-              position="RCOS: LEGUP"
-              company="Github"
-              companyLink="https://github.com/Bram-Hub/LEGUP"
-              time="Open source project (Java, Swing)"
-              work="Implemented front end features using Java and Swing"
-            />
-
-            <Details
-              position="RCOS: Excalendar"
-              company="Github"
-              companyLink="https://github.com/GregWith2Gs/Exalendar-React"
-              time="Open source project (Html, Css, Javascript, SQL)"
-              work="Worked on a team responsible for developing a new mobile app
-              feature that allowed users to create and share short-form video
-              content, including designing and implementing a new user interface
-              and developing the backend infrastructure to support the feature."
-            />
-        </ul>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light lg:text-3xl xs:text-2xl">
+            {title}
+          </h2>
+        </Link>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
+        <div className="mt-2 flex items-center">
+          <Link href={github} target="_blank" className="w-10">
+            {" "}
+            <GithubIcon />
+          </Link>
+          <Link
+            href={link}
+            target="_blank"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
+            dark:bg-light dark:text-dark
+            sm:px-4 sm:text-base
+            "
+          >
+            Visit Project
+          </Link>
+        </div>
       </div>
-    </div>
+    </article>
   );
 };
 
-export default project;
+const Project = ({ title, type, img, link, github }) => {
+  return (
+    <article
+      className="w-full flex flex-col items-center justify-center rounded-2xl 
+    border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4
+    "
+    >
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark
+    rounded-br-3xl dark:bg-light md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]
+    "
+      />
+      <Link
+        href={link}
+        target="_blank"
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
+      >
+        <FramerImage
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.2 }}
+        />
+      </Link>
+
+      <div className="w-full flex flex-col items-start justify-between mt-4">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base">
+          {type}
+        </span>
+        <Link
+          href={link}
+          target="_blank"
+          className="hover:underline underline-offset-2"
+        >
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+            {title}
+          </h2>
+        </Link>
+
+        <div className="w-full flex items-center justify-between">
+          <Link
+            href={link}
+            target="_blank"
+            className="text-lg font-semibold underline md:text-base"
+          >
+            Visit
+          </Link>
+          <Link href={github} target="_blank" className="w-8 md:w-6">
+            <GithubIcon />
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
+const projects = () => {
+  return (
+    <>
+      <Head>
+        <title>Modern Portfolio Built with Nextjs | Projects Page</title>
+        <meta
+          name="description"
+          content="Discover the latest webapp projects created by CodeBucks, a Next.js developer with 
+        expertise in React.js and full-stack development. Browse software engineering articles and tutorials for tips on creating your own portfolio."
+        />
+      </Head>
+      <TransitionEffect />
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+        <Layout className="pt-16">
+          <AnimatedText
+            text="Imagination Trumps Knowledge!"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+          />
+
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Featured Project"
+                title="Crypto Screener Application"
+                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your local currency."
+                img={project1}
+                link="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
+                github="https://github.com/codebucks27/CryptoBucks-Final-Code"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website Template"
+                title="NFT collection Website"
+                img={project2}
+                link="https://devdreaming.com/videos/create-nft-collection-website-reactjs"
+                github="https://github.com/codebucks27/The-Weirdos-NFT-Website-Starter-Code"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website"
+                title="Fashion Studio Website"
+                img={project3}
+                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+                github="https://github.com/codebucks27/wibe-studio"
+              />
+            </div>
+
+            <div className="col-span-12">
+              <FeaturedProject
+                type="Portfolio Website"
+                title="React Portfolio Website"
+                summary="A professional portfolio website using React JS, Framer-motion, and Styled-components. It has smooth page transitions, cool background effects, unique design and it is mobile responsive."
+                img={project4}
+                link="https://devdreaming.com/videos/build-stunning-portfolio-website-react-js-framer-motion"
+                github="https://github.com/codebucks27/react-portfolio-final"
+              />
+            </div>
+
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Website Template"
+                img={project5}
+                title="Agency Website Template"
+                link="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+                github="https://github.com/codebucks27/wibe-studio"
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                type="Blog Website"
+                img={project6}
+                title="DevDreaming"
+                link="https://devdreaming.com"
+                github="https://github.com/codebucks27"
+              />
+            </div>
+          </div>
+        </Layout>
+      </main>
+    </>
+  );
+};
+
+export default projects;

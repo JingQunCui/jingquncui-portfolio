@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>My Portfolio</title>
+      <title>Jesse Cui</title>
         <meta
           name="description"
           content=""
