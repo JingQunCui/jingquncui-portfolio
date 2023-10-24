@@ -32,7 +32,7 @@ const about = () => {
                 </p>
 
                 <p className="my-6 font-medium">
-                I&apos;m actively on the lookout for new graduate opportunities in Spring/Summer 2024 with a STEM-focused company where I can make a significant impact on society and further develop my own skill set. Feel free to contact me if you want to stay in touch.
+                I&apos;m actively on the lookout for new graduate opportunities in Spring/Summer 2024 with a STEM-focused company where I can make a significant impact on society and further develop my own skill set. Feel free to contact me if you want to get in touch.
                 </p>
               </div>
   

@@ -45,19 +45,18 @@ const Experience = () => {
             <Details
               position="Web Design Intern"
               company="Kuumba Health LLC"
-              companyLink="https://linktr.ee/kuumbahealth"
               time="Summer 2023"
               address="Remote"
               work="Implemented website modernization initiatives to enhance the overall user experience and integrate SEO optimization, resulting in ~37% surge in website traffic from unique visitors. Utilized Html, Css modifications to "
             />
 
             <Details
-              position="Web Design Intern"
-              company="Kuumba Health LLC"
-              companyLink="https://linktr.ee/kuumbahealth"
-              time="Summer 2023"
-              address="Remote"
-              work="Implemented website modernization initiatives to enhance the overall user experience and integrate SEO optimization, resulting in ~37% surge in website traffic from unique visitors. Utilized Html, Css modifications to "
+              position="Software Engineer"
+              company="ACMAS GitHub"
+              companyLink="https://github.com/ACMAS/ACMAS-Frontend"
+              time="Fall 2023"
+              address="Open Source Contributor | Troy, NY | Pythong, Django, PostgresQL and Docker"
+              work="Enhanced overall system by integrating OCR functionality, enabling seamless database operations and content storage and retrieval. This upgrade, powered by Python, Django, PostgresQL, and Docker, also included improved search engine optimizations. To support these enhancements, we revamped the database model to align more effectively with the OCR and search engine functionalities, creating a more streamlined and efficient system."
             />
 
             <Details

@@ -14,7 +14,6 @@ const NavBar = () => {
         <nav className="flex items-center justify-center">
           <Link href="/" className="mr-4">Home</Link>
           <Link href="/about" className="mx-4">About</Link>
-          <Link href="/projects" className="mx-4">Projects</Link>
         </nav>
 
         <nav className="flex items-center justify-center flex-wrap">
