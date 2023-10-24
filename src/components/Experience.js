@@ -43,47 +43,38 @@ const Experience = () => {
         <motion.div className="absolute left-9 top-0 w-[4px] h-full origin-top bg-primaryDark shadow-3xl"/>
           <ul className="w-full flex flex-col items-start justify-between ml-4">
             <Details
-              position="Web Design Intern"
-              company="Kuumba Health LLC"
-              time="Summer 2023"
-              address="Remote"
-              work="Implemented website modernization initiatives to enhance the overall user experience and integrate SEO optimization, resulting in ~37% surge in website traffic from unique visitors. Utilized Html, Css modifications to "
-            />
-
-            <Details
-              position="Software Engineer"
-              company="ACMAS GitHub"
+              position="Software Developer"
+              company="RCOS ACMAS"
               companyLink="https://github.com/ACMAS/ACMAS-Frontend"
               time="Fall 2023"
-              address="Open Source Contributor | Troy, NY | Pythong, Django, PostgresQL and Docker"
-              work="Enhanced overall system by integrating OCR functionality, enabling seamless database operations and content storage and retrieval. This upgrade, powered by Python, Django, PostgresQL, and Docker, also included improved search engine optimizations. To support these enhancements, we revamped the database model to align more effectively with the OCR and search engine functionalities, creating a more streamlined and efficient system."
+              address="Troy, NY | Open-Source"
+              work="Implemented OCR functionality, database operations, content storage and retrieval, and improved search engine optimizations. Further revamped the database model to align more effectively with the OCR and search engine functionalities, creating a more streamlined and efficient system."
             />
-
+            
             <Details
               position="Web Design Intern"
               company="Kuumba Health LLC"
-              companyLink="https://linktr.ee/kuumbahealth"
               time="Summer 2023"
               address="Remote"
-              work="Implemented website modernization initiatives to enhance the overall user experience and integrate SEO optimization, resulting in ~37% surge in website traffic from unique visitors. Utilized Html, Css modifications to "
+              work="Designed and deployed a new landing page through convertkit theme with HTML and CSS extension. Integrated new SEO optimization resulting in ~27% increased unique visitors. Acted as intern team lead to oversee project planning and task management."
             />
 
             <Details
-              position="Web Design Intern"
-              company="Kuumba Health LLC"
-              companyLink="https://linktr.ee/kuumbahealth"
-              time="Summer 2023"
-              address="Remote"
-              work="Implemented website modernization initiatives to enhance the overall user experience and integrate SEO optimization, resulting in ~37% surge in website traffic from unique visitors. Utilized Html, Css modifications to "
+              position="Front-End Developer"
+              company="RCOS Exalendar"
+              companyLink="https://github.com/NatSR4/Exalendar"
+              time="Spring 2023"
+              address="Troy, NY"
+              work="Developed a novel login page as a replacement for the former vanilla Javascript model, accomplished through the use of React, Node, Express, and Tailwind. "
             />
 
             <Details
-              position="Web Design Intern"
-              company="Kuumba Health LLC"
-              companyLink="https://linktr.ee/kuumbahealth"
-              time="Summer 2023"
-              address="Remote"
-              work="Implemented website modernization initiatives to enhance the overall user experience and integrate SEO optimization, resulting in ~37% surge in website traffic from unique visitors. Utilized Html, Css modifications to "
+              position="Software Developer"
+              company="RCOS LEGUP"
+              companyLink="https://github.com/Bram-Hub/LEGUP"
+              time="Summer 2022"
+              address="Troy, NY"
+              work="Improved UI/UX by leveraging Javaswing while incorporating new UI capability such as XML file discover and opening. Addressed more than 30 bugs to ensure a smooth and error-free user experience."
             />
           </ul>
       </div>
