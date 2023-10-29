@@ -24,17 +24,12 @@ export default function Home() {
                 <AnimatedText text="I am an aspiring software engineer who is committed to creating impactful solutions through technology." className='item center !text-2xl !text-left' color="white" paddingLeft="40px"/>
 
                 <div className='flex items-end self-start mt-2'>
-                  <Link href="/JesseCui_2024_Resume.pdf" target={"_blank"}
+                  <Link href="mailto:jingcui99@gmail.com" target={"_blank"}
                   className="flex items-center bg-dark text-light p-2.5 px-6
                   rounded-lg text-lg font-semibold hover:bg-light hover:text-dark
                   border-2 border-solid border-transparent hover:border-dark
                   dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light
                   hover:dark:border-light" download={true}>
-                    Resume
-                  </Link>
-
-                  <Link href="mailto:jingcui99@gmail.com" target={"_blank"}
-                  className="ml-4 text-lg font-medium capitalize text-dark underline dark:text-light">
                     Contact
                   </Link>
                 </div>
