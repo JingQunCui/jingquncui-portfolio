@@ -28,7 +28,7 @@ const about = () => {
                   Biography
                 </h2>
                 <p className="mt-10 font-medium">
-                Hello, I&apos;m Jing Qun Cui, also known as Jesse Cui. I&apos;m currently a fourth-year student at Rensselaer Polytechnic Institute, majoring in Computer Science. My academic pursuits primarily revolve around software engineering and machine learning. I take pride in my strong organizational skills, unwavering dedication, and ability to excel in high-pressure situations.
+                Hello, I&apos;m Jing Qun Cui, also known as Justin Cui. I&apos;m currently a fourth-year student at Rensselaer Polytechnic Institute, majoring in Computer Science. My academic pursuits primarily revolve around software engineering and machine learning. I take pride in my strong organizational skills, unwavering dedication, and ability to excel in high-pressure situations.
                 </p>
 
                 <p className="my-6 font-medium">
