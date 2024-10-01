@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>Jesse Cui</title>
+      <title>Justin Cui</title>
         <meta
           name="description"
           content=""
