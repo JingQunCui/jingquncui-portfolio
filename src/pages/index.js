@@ -21,7 +21,7 @@ export default function Home() {
               <div className='w-full flex flex-col items-center self-center '>
                 <AnimatedText text="Hi, my name is..." className='!text-sm !text-left' color="white"/>
                 <AnimatedText text="Justin Cui" className='item center !text-9xl !text-left' color="lightBlue" paddingLeft="20px"/>
-                <AnimatedText text="I am an aspiring software engineer who is committed to creating impactful solutions through technology." className='item center !text-2xl !text-left' color="white" paddingLeft="40px"/>
+                <AnimatedText text="Software engineer who is committed to creating impactful solutions through technology." className='item center !text-2xl !text-left' color="white" paddingLeft="40px"/>
 
                 <div className='flex items-end self-start mt-2'>
                   <Link href="mailto:jingcui99@gmail.com" target={"_blank"}

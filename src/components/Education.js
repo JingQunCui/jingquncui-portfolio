@@ -40,7 +40,7 @@ const Education = () => {
           <Details
             type="Bachelor of Science in Computer Science"
             time="2020-2024"
-            place="Rensselaer Polytechnic Institute | GPA: 3.5"
+            place="Rensselaer Polytechnic Institute"
             info="Relevant Courses: Data Structures, Algorithms, Discrete Math, Computer System, AI & ML, Cryptography and Network Security, 
             Graph Theory, Operating System, Database Systems, Linear Algebra, AI & Blockchain"
           />
